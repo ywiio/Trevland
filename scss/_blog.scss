@@ -1,0 +1,121 @@
+.blog {
+    padding: 80px 0;
+
+    .title {
+        text-align: center;
+        font-size: 36px;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    .sub-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        font-size: 18px;
+        line-height: 160%;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .block__left {
+            flex: 1;
+            max-width: 48%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+
+            &_img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+
+            &_title {
+                font-size: 24px;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+
+            &_text {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: rgba(0, 0, 0, 0.7);
+                margin-bottom: 15px;
+            }
+
+            &_autor {
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .block__right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                background: #fff;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+                &_img {
+                    width: 50%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                }
+
+                
+            }
+            &-info {
+                &_title {
+                    // @include font_500("Gelasio");
+                    font-size: 18px;
+                    color: $primary-color;
+                    margin-bottom: 5px;
+                }
+
+                &_text {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+
+                &_autor {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.5);
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    
+    &__card{
+        &:hover {
+            box-shadow: 0 6px 35px rgba(0, 0, 0, 0.08);
+        }
+    }
+}

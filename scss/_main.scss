@@ -1,0 +1,31 @@
+.main {
+    
+    padding-top: 286px;
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/bg-photo.png") center no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+
+    &__btn {
+        font-size: 16px;
+        padding: 18px 46px 17px 47px;
+        background: #C9453B;
+        border-radius: 5px;
+    }
+
+    &__title {
+        // @include font_700("Gelasio");
+        max-width: 804px;
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+    
+    &__text {
+        max-width: 458px;
+        font-size: 18px;
+        line-height: 160%;
+        opacity: 60%;
+        margin-bottom: 41px;
+    }
+}
